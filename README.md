@@ -1,12 +1,13 @@
 # paladin-doc
-all documents of paladin
+paladin工程的所有文档
 
 
 
-技术列表
+#### 技术列表
 
 | 技术                | 说明                                                         | 官网                                             |
 | ------------------- | ------------------------------------------------------------ | ------------------------------------------------ |
+| Java相关框架 |  |  |
 | Spring Boot         | servlet容器和springMVC                                       | https://spring.io/projects/spring-boot/          |
 | Spring Cloud        | 微服务管理                                                   | https://spring.io/cloud                          |
 | Spring Security     | 认证和访问控制框架                                           | https://spring.io/projects/spring-security/      |
@@ -26,11 +27,7 @@ all documents of paladin
 | JWT                 | JSON Web Tokens是开放的、工业级标准RFC7519方法，安全展示两个应用间的声明 | https://jwt.io/                                  |
 | Jenkins             | 构建、部署和自动化工程                                       | https://www.jenkins.io/                          |
 | nginx               | HTTP、反向代理、邮件代理和TCP/UDP代理服务器                  |                                                  |
-
-前端技术列表
-
-| 技术       | 说明                                                     | 官网                                                         |
-| ---------- | -------------------------------------------------------- | ------------------------------------------------------------ |
+| 前端框架 |  | |
 | Vue        | 渐进式JavaScript框架                                     | https://cn.vuejs.org/                                        |
 | Vue Router | Vue.js官方的路由管理器                                   | https://router.vuejs.org/zh/                                 |
 | Vuex       | 状态管理模式                                             | https://vuex.vuejs.org/zh/                                   |
@@ -43,11 +40,7 @@ all documents of paladin
 | nprogress  | 进度条组件                                               | https://ricostacruz.com/nprogress/                           |
 | React      | 一个构件用户界面的JavaScript库                           | https://reactjs.org/                                         |
 | TypeScript | 集成JavaScript，并增加了类型检查，提供捕获错误和修复     | https://www.typescriptlang.org/                              |
-
-语言和编译器
-
-| 名称                   | 说明                                                      | 官网                                                       |
-| ---------------------- | --------------------------------------------------------- | ---------------------------------------------------------- |
+| 工具 |  |  |
 | jdk                    | Java开发套件，Oracle版收费 可以考虑OpenJDK                | http://openjdk.java.net/                                   |
 | node.js                | 基于Chrome V8 JavaScript引擎构建的JavaScript运行时        | https://nodejs.org/zh-cn/                                  |
 | IntelliJ IDEA          | 功能强大的JVM集成开发环境，免费版                         | https://www.jetbrains.com/idea/                            |
@@ -61,3 +54,8 @@ all documents of paladin
 | typora                 | 无缝切换的Markdown读写体验，免费                          | https://www.typora.io/                                     |
 | gradle                 | 帮助更好、更快地构建、自动化、交付软件，免费              | https://gradle.org/                                        |
 
+
+
+架构图
+
+![项目架构](项目架构.png)

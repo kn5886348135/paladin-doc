@@ -28,6 +28,12 @@
 
 
 
+使用[hikari](https://github.com/brettwooldridge/HikariCP)替代druid，没有基于Java代码配置的DataSource，mybatis-plus的MybatisConfigurer配置会出现`Invalid bound statement (not found)`的异常，因为HikariDataSource 为null。
+
+
+
+
+
 三、请求结果封装
 
 正常请求返回的http status为200，异常请求返回的http status不能为200，要求根据具体场景给出对应的http status和对应的状态码
@@ -47,6 +53,16 @@
 五、全局异常处理
 
 @ExceptionHandler或者重写WebMvcConfigurationSupport的configureHandlerExceptionResolvers方法
+
+SpringMVC官方示例是使用**WebMvcConfigurer** 实现MVC配置的，[spring官网MVC Config](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/web.html#mvc-config-interceptors)
+
+```java
+DispatcherServlet代理一个异常处理器(HandlerExceptionResolver)链,configureHandlerExceptionResolvers是在@ExceptionHandler前面
+```
+
+[异常处理](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/web.html#mvc-exceptionhandlers)
+
+[@ExceptionHandler](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/web.html#mvc-ann-exceptionhandler)详情
 
 
 
@@ -138,3 +154,7 @@ Nginx也有gzip等各种格式的压缩
 
 
 二十三、前后端分离的跨域、重定向问题
+
+@Configuration使配置生效
+
+CorsFilter处理Options请求，返回满足需要的headers，跨域问题详情参考[阮一峰博客](http://www.ruanyifeng.com/blog/2016/04/cors.html)

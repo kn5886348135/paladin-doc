@@ -158,3 +158,9 @@ Nginx也有gzip等各种格式的压缩
 @Configuration使配置生效
 
 CorsFilter处理Options请求，返回满足需要的headers，跨域问题详情参考[阮一峰博客](http://www.ruanyifeng.com/blog/2016/04/cors.html)
+
+
+
+请求路径问题
+
+如果方法上的路径是"/",比如@PostMapping(value = "/", produces = MediaType.APPLICATION_JSON_VALUE)，controller上的路径是"/account"，比如@RequestMapping("/account")，在请求的时候一定要将路径写完整。contextpath/account/，少了后面的斜杠会出现404异常
